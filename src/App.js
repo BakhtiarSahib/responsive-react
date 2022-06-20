@@ -1,23 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from "./components/Home/Home";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import NotFound from "./components/NotFound/NotFound";
+import Booking from "./components/Booking/Booking/Booking";
+import Login from "./components/Login/Login/Login";
+import Header from "./components/Shared/Header/Header";
+import AuthProvider from "./contexts/AuthProvider";
+import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <AuthProvider>
+          <BrowserRouter>
+              <Header/>
+              <Routes>
+                  <Route path="/" element={<Home />}>
+                      <Route index element={<Home />} />
+                  </Route>
+                  <Route path="/home" element={<Home />}/>
+                  <Route path="/login" element={<Login />}/>
+                  <Route path="/*" element={<PrivateRoute/>}>
+                      <Route path='booking/:serviceId' element={<Booking />}/>
+                  </Route>
+                 {/* <Route path="/booking/:serviceId" element={<Booking/>}/>*/}
+                  <Route path="*" element={<NotFound />}/>
+              </Routes>
+          </BrowserRouter>
+      </AuthProvider>
     </div>
   );
 }

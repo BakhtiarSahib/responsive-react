@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Replace Tire",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus distinctio doloremque earum magni maxime molestias nesciunt perferendis, placeat quo, sit tempore vel!,",
+    "price": "2000",
+    "img": "https://i.ibb.co/vsqkwcn/pexels1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Oil change",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus distinctio doloremque earum magni maxime molestias nesciunt perferendis, placeat quo, sit tempore vel!,",
+    "price": "200",
+    "img": "https://i.ibb.co/g4MhFB2/pexels2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Break repairing",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus distinctio doloremque earum magni maxime molestias nesciunt perferendis, placeat quo, sit tempore vel!,",
+    "price": "225",
+    "img": "https://i.ibb.co/mNf26S6/pexels3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "wheel Alignment",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus distinctio doloremque earum magni maxime molestias nesciunt perferendis, placeat quo, sit tempore vel!,",
+    "price": "100",
+    "img": "https://i.ibb.co/R6hC2Jf/pexels4.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Engine Diagnostic",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus distinctio doloremque earum magni maxime molestias nesciunt perferendis, placeat quo, sit tempore vel!,",
+    "price": "300",
+    "img": "https://i.ibb.co/MDc43Yd/pexels5.jpg"
+  },
+  {
+    "id": 6,
+    "name": "wash",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus distinctio doloremque earum magni maxime molestias nesciunt perferendis, placeat quo, sit tempore vel!,",
+    "price": "50",
+    "img": "https://i.ibb.co/gjgWVDV/pexels6.jpg"
+  }
+]
