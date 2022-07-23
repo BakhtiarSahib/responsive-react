@@ -7,6 +7,8 @@ import Login from "./components/Login/Login/Login";
 import Header from "./components/Shared/Header/Header";
 import AuthProvider from "./contexts/AuthProvider";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
+import AddServices from "./components/AddServices/AddServices";
+import ManageServices from "./components/ManageServices/ManageServices";
 
 function App() {
   return (
@@ -22,7 +24,10 @@ function App() {
                   <Route path="/login" element={<Login />}/>
                   <Route path="/*" element={<PrivateRoute/>}>
                       <Route path='booking/:serviceId' element={<Booking />}/>
+
                   </Route>
+                  <Route path="/addServices" element={<AddServices/>}/>
+                  <Route path="/manageServices" element={<ManageServices/>}/>
                  {/* <Route path="/booking/:serviceId" element={<Booking/>}/>*/}
                   <Route path="*" element={<NotFound />}/>
               </Routes>
